@@ -1,0 +1,4 @@
+tt:
+    resource: "@TTMainBundle/Resources/config/routing.yml"
+    prefix:   /
+

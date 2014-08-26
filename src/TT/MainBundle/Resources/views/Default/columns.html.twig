@@ -1,0 +1,30 @@
+{% extends 'TTMainBundle:Default:base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block navbar %}
+{{ include('TTMainBundle:Default:navbar.html.twig') }}
+{% endblock %}
+
+{% block main_flash %}
+<div id="restaurants_jumbotron" class="jumbotron">
+  <h1>{{ title }}</h1>
+</div>
+{% endblock %}
+
+{% block content %}
+{% for content in contents %}
+{% if contents | length == 2 %}
+<div class="col-xs-6 column">
+{% elseif contents | length == 3 %}
+<div class="col-xs-4 column">
+{% elseif contents | length == 4 %}
+<div class="col-xs-3 column">
+{% else %}
+<div class="column">
+{% endif %}
+  {{ content | markdown }}
+</div>
+{% endfor %}
+{% endblock %}
+

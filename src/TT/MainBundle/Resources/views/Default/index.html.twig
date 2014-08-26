@@ -1,0 +1,103 @@
+{% extends 'TTMainBundle:Default:base.html.twig' %}
+
+{% use 'TTMainBundle:Default:carousel.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block navbar %}
+{{ include('TTMainBundle:Default:navbar.html.twig') }}
+{% endblock %}
+
+{% block carousel_images %}
+<div class="item active">
+  <img src="{{ asset('img/indy1.png') }}">
+  <div class="carousel-caption rounded shaded">
+    <p>{{ blurb1 | markdown }}</p>
+    <p>
+      <a class="btn btn-lg btn-primary" href="{{ path('about') }}">
+        Discover Indy
+      </a>
+    </p>
+  </div>
+</div>
+<div class="item">
+  <img src="{{ asset('img/indy2.png') }}">
+  <div class="carousel-caption rounded shaded">
+    <p>{{ blurb2 | markdown }}</p>
+    <p>
+      <a class="btn btn-lg btn-primary"
+         href="{{ path('lodging', {'subsection': 'bnb'}) }}">
+          Find a Bed & Breakfast
+      </a>
+      <a class="btn btn-lg btn-primary"
+         href="http://www.pacersbikeshare.org">
+          Learn About Bikesharing
+      </a>
+    </p>
+  </div>
+</div>
+<div class="item">
+  <img src="{{ asset('img/indy4.png') }}">
+  <div class="carousel-caption rounded shaded">
+    <p>{{ blurb3 | markdown }}</p>
+    <p>
+      <a class="btn btn-lg btn-primary"
+         href="{{ path('activities', {'subsection': 'family'}) }}">
+          Explore Family Activities
+      </a>
+    </p>
+  </div>
+</div>
+<div class="item">
+  <img src="{{ asset('img/indy5.png') }}">
+  <div class="carousel-caption rounded shaded">
+    <p>{{ blurb4 | markdown }}</p>
+    <p>
+      <a class="btn btn-lg btn-primary"
+         href="{{ path('activities', {'subsection': 'theatre'}) }}">
+          Theatre
+      </a>
+      <a class="btn btn-lg btn-primary"
+         href="{{ path('activities', {'subsection': 'music'}) }}">
+          Music
+      </a>
+    </p>
+  </div>
+</div>
+<div class="item">
+  <img src="{{ asset('img/indy8.png') }}">
+  <div class="carousel-caption rounded shaded">
+    <p>{{ blurb5 | markdown }}</p>
+    <p>
+      <a class="btn btn-lg btn-primary"
+         href="{{ path('activities', {'subsection': 'sports'}) }}">
+          Come See Indy Sports
+      </a>
+    </p>
+  </div>
+</div>
+<div class="item">
+  <img src="{{ asset('img/indy12.png') }}">
+  <div class="carousel-caption rounded shaded">
+    <p>{{ blurb6 | markdown }}</p>
+    <p>
+      <a class="btn btn-lg btn-primary"
+         href="{{ path('lodging', {'subsection': 'bnb'}) }}">
+          Bed &amp; Breakfasts
+      </a>
+      <a class="btn btn-lg btn-primary"
+         href="{{ path('lodging', {'subsection': 'hotels'}) }}">
+          Hotels
+      </a>
+      <a class="btn btn-lg btn-primary"
+         href="{{ path('lodging', {'subsection': 'camping'}) }}">
+          Camping
+      </a>
+    </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+

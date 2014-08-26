@@ -1,0 +1,99 @@
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ path("home") }}">Go Indy</a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-menu">
+      <ul class="nav navbar-nav" id="main-menu-left">
+        {% if section == "about" %}
+        <li class="active">
+        {% else %}
+        <li>
+        {% endif %}
+          <a href="{{ path('about') }}">About</a>
+        </li>
+        {% if section == "restaurants" %}
+        <li class="dropdown active">
+        {% else %}
+        <li class="dropdown">
+        {% endif %}
+          <a class="dropdown-toggle" data-toggle="dropdown"
+             href="#">Restaurants<b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu" id="restaurant-menu">
+            <li><a href="{{ path('restaurants') }}">Restaurants</a></li>
+            <li class="divider"></li>
+            <li><a href="{{ path('restaurants') }}/breakfast">Breakfast</a></li>
+            <li><a href="{{ path('restaurants') }}/lunch">Lunch</a></li>
+            <li><a href="{{ path('restaurants') }}/dinner">Dinner</a></li>
+            <li><a href="{{ path('restaurants') }}/dessert">Dessert</a></li>
+          </ul>
+        </li>
+        {% if section == "lodging" %}
+        <li class="dropdown active">
+        {% else %}
+        <li class="dropdown">
+        {% endif %}
+          <a class="dropdown-toggle" data-toggle="dropdown"
+             href="#">Lodging<b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu" id="lodging-menu">
+            <li><a href="{{ path('lodging') }}">Lodging</a></li>
+            <li class="divider"></li>
+            <li><a href="{{ path('lodging') }}/bnb">Bed and Breakfasts</a></li>
+            <li><a href="{{ path('lodging') }}/hotel">Hotels</a></li>
+            <li><a href="{{ path('lodging') }}/park">Parks</a></li>
+          </ul>
+        </li>
+        {% if section == "activities" %}
+        <li class="dropdown active">
+        {% else %}
+        <li class="dropdown">
+        {% endif %}
+          <a class="dropdown-toggle" data-toggle="dropdown"
+             href="#">Activities<b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu" id="lodging-menu">
+            <li>
+              <a href="{{ path('activities') }}">Activities</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="{{ path('activities', {'subsection': 'family'}) }}">Family</a>
+            </li>
+            <li>
+              <a href="{{ path('activities', {'subsection': 'theatre'}) }}">Theatre</a>
+            </li>
+            <li>
+              <a href="{{ path('activities', {'subsection': 'music'}) }}">Music</a>
+            </li>
+            <li>
+              <a href="{{ path('activities', {'subsection': 'sports'}) }}">Sports</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://visitindy.com">Visit Indy</a></li>
+        <li>
+          <a href="http://www.discoverfountainsquare.com">
+            Discover Fountain Square
+          </a>
+        </li>
+        <li>
+          <a href="http://www.discoverbroadripplevillage.com">
+            Discover Broad Ripple Village
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+

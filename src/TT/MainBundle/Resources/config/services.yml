@@ -1,0 +1,7 @@
+parameters:
+#    tt_main.example.class: TT\MainBundle\Example
+
+services:
+#    tt_main.example:
+#        class: %tt_main.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

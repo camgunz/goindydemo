@@ -1,0 +1,28 @@
+{% extends 'TTMainBundle:Default:base.html.twig' %}
+
+{% use 'TTMainBundle:Default:affixed_nav.html.twig' %}
+
+{% block title %}About{% endblock %}
+
+{% block navbar %}
+{{ include('TTMainBundle:Default:navbar.html.twig') }}
+{% endblock %}
+
+{% block main_flash %}
+<div id="about_jumbotron" class="jumbotron">
+  <h1>The Circle City</h1>
+</div>
+{% endblock %}
+
+{% block subsections %}
+{% for subsection in subsections %}
+<li><a href="#{{ subsection }}">{{ subsection|capitalize }}</a></li>
+{% endfor %}
+{% endblock %}
+
+{% block content %}
+<div class="col-xs-8">
+  {{ content | markdown }}
+</div>
+{% endblock %}
+

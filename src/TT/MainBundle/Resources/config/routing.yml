@@ -1,0 +1,24 @@
+home:
+    path:     /
+    defaults: { _controller: TTMainBundle:Default:index }
+
+about:
+    path:     /about
+    defaults: { _controller: TTMainBundle:Default:about }
+
+activities:
+    path:     /activities/{subsection}
+    defaults: { _controller: TTMainBundle:Default:activities, subsection: null }
+
+restaurants:
+    path:     /restaurants/{subsection}
+    defaults: { _controller: TTMainBundle:Default:restaurants, subsection: null }
+
+music:
+    path:     /music/{subsection}
+    defaults: { _controller: TTMainBundle:Default:music, subsection: null }
+
+lodging:
+    path:     /lodging/{subsection}
+    defaults: { _controller: TTMainBundle:Default:lodging, subsection: null }
+

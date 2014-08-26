@@ -1,0 +1,227 @@
+body {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.tt-panel {
+    padding: 6px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: white;
+    color: #108a93;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 4px solid #008030;
+}
+
+div.navbar {
+    margin: 0px;
+}
+
+#content {
+    position: relative;
+}
+
+#main-flash {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.carousel-caption h1 {
+    font-size: 6em;
+}
+
+.carousel-caption h2 {
+    font-size: 3em;
+}
+
+.carousel-caption {
+    font-size: 1.5em;
+}
+
+.shaded {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 1em;
+}
+
+.rounded {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+@media (max-height:1200px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 1131px;
+    }
+}
+
+@media (max-height:1152px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 1083px;
+    }
+}
+
+@media (max-height:1080px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 1011px;
+    }
+}
+
+@media (max-height:1050px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 981px;
+    }
+}
+
+@media (max-height:1024px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 955px;
+    }
+}
+
+@media (max-height:960px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 891px;
+    }
+}
+
+@media (max-height:900px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 831px;
+    }
+}
+
+@media (max-height:864px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 795px;
+    }
+}
+
+@media (max-height:854px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 785px;
+    }
+}
+
+@media (max-height:800px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 731px;
+    }
+}
+
+@media (max-height:768px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 699px;
+    }
+}
+
+@media (max-height:720px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 651px;
+    }
+}
+
+@media (max-height:640px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 571px;
+    }
+}
+
+@media (max-height:600px) {
+    #main-carousel .item img {
+        width: 100%;
+        max-height: 531px;
+    }
+}
+
+.jumbotron h1 {
+    background-color: rgba(0, 0, 0, .5);
+    padding: .5em;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#about_jumbotron {
+    background: url("/img/indy13.png");
+    background-position: center;
+}
+
+#restaurants_jumbotron {
+    background: url("/img/indy14.png");
+    background-position: center;
+}
+
+.affixed_nav {
+  width: 160px;
+  max-width: 160px;
+}
+
+.affixed_sidenav {
+  width: 160px;
+  max-width: 160px;
+}
+
+ul.nav-tabs{
+    width: 140px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+
+ul.nav-tabs li{
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+
+ul.nav-tabs li:first-child{
+    border-top: none;
+}
+
+ul.nav-tabs li a{
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 0;
+}
+
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+    color: #fff;
+    background: #0088cc;
+    border: 1px solid #0088cc;
+}
+
+ul.nav-tabs li:first-child a{
+    border-radius: 4px 4px 0 0;
+}
+
+ul.nav-tabs li:last-child a{
+    border-radius: 0 0 4px 4px;
+}
+
+ul.nav-tabs.affix{
+    top: 30px; /* Set the top position of pinned element */
+}
+
+.column p img {
+    max-width: 100%;
+    height: auto;
+}
+

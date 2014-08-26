@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Monkirta Pursuit NC';
+    src: url('../fonts/Monkirta Pursuit NC.ttf') format('truetype'),
+         url('../fonts/Monkirta Pursuit NC.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'White Rabbit';
+    src: url('../fonts/whitrabt.ttf') format('truetype'),
+         url('../fonts/whitrabt.woff') format('woff');
+}
+

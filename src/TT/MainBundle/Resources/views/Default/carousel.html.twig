@@ -1,0 +1,31 @@
+{% block main_flash %}
+<div id="main-carousel" class="carousel slide" data-ride="carousel"
+     data-interval="20000">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#main-carousel" data-slide-to="1"></li>
+    <li data-target="#main-carousel" data-slide-to="2"></li>
+    <li data-target="#main-carousel" data-slide-to="3"></li>
+    <li data-target="#main-carousel" data-slide-to="4"></li>
+    <li data-target="#main-carousel" data-slide-to="5"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+  {% block carousel_images %}
+  {% endblock %}
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#main-carousel"
+     role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#main-carousel"
+     role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+{% endblock %}
+
