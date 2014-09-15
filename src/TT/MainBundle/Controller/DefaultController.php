@@ -198,8 +198,8 @@ class DefaultController extends Controller
         return $this->render(
             "TTMainBundle:Default:columns.html.twig", array(
                 "title" => "Lodging",
-                "section" => "restaurants",
-                "subsection" => "restaurants",
+                "section" => "lodging",
+                "subsection" => "lodging",
                 "contents" => array (
                     $this->readContentFile("bnb.md"),
                     $this->readContentFile("hotel.md"),
@@ -278,8 +278,8 @@ class DefaultController extends Controller
         return $this->render(
             "TTMainBundle:Default:columns.html.twig", array(
                 "title" => "Activities",
-                "section" => "restaurants",
-                "subsection" => "restaurants",
+                "section" => "activities",
+                "subsection" => "activities",
                 "contents" => array (
                     $this->readContentFile("family.md"),
                     $this->readContentFile("theatre.md"),
